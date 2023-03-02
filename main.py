@@ -26,7 +26,8 @@ student_data_frame = pandas.DataFrame(student_dict)
 {"A": "Alfa", "B": "Bravo"}
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
 dictionary = {row.letter:row.code for (index, row) in data.iterrows()}
-print(dictionary)
 
 #TODO 2. Create a list of the phonetic code words from a word that the user inputs.
-
+user_input = input("Enter a word: ").upper()
+nato_list = [ dictionary.get(letter) for letter in user_input if letter in dictionary.keys() ]
+print(nato_list)

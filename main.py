@@ -22,12 +22,25 @@ student_data_frame = pandas.DataFrame(student_dict)
 # Keyword Method with iterrows()
 # {new_key:new_value for (index, row) in df.iterrows()}
 
-#TODO 1. Create a dictionary in this format:
-{"A": "Alfa", "B": "Bravo"}
+# TODO 1. Create a dictionary in this format: {"A": "Alfa", "B": "Bravo"}
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
-phonetic_dictionary = {row.letter:row.code for (index, row) in data.iterrows()}
+phonetic_dictionary = {row.letter: row.code for (index, row) in data.iterrows()}
 
-#TODO 2. Create a list of the phonetic code words from a word that the user inputs.
-word = input("Enter a word: ").upper()
-output_list = [phonetic_dictionary[letter] for letter in word]
-print(output_list)
+
+# TODO 2. Create a list of the phonetic code words from a word that the user inputs.
+#  raise exceptions
+
+# my solution with while loop
+# not_all_letters = True
+#
+# while not_all_letters:
+#     word = input("Enter a word: ").upper()
+#     try:
+#         output_list = [phonetic_dictionary[letter] for letter in word]
+#     except KeyError:
+#         print("Sorry, only letters in the alphabet please.")
+#     else:
+#         not_all_letters = False
+#         print(output_list)
+
+

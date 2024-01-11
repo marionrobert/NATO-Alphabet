@@ -2,6 +2,11 @@
 
 Ce projet Python utilise le module Pandas pour créer un générateur de mots en alphabet phonétique de l'OTAN. L'alphabet phonétique de l'OTAN est utilisé pour représenter chaque lettre de l'alphabet par un mot spécifique pour faciliter la communication, en particulier dans des environnements où la clarté est essentielle.
 
+### Installation et Configuration :
+
+- Pyhton 3.9.6
+- importation du module pandas
+
 ## Instructions
 
 1. **Création d'un dictionnaire phonétique OTAN :** Le script commence par lire un fichier CSV, `nato_phonetic_alphabet.csv`, pour créer un dictionnaire en utilisant les colonnes "letter" et "code". Ce dictionnaire associe chaque lettre de l'alphabet à son mot phonétique OTAN correspondant.
